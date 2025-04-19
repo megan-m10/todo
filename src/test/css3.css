@@ -1,0 +1,51 @@
+.css3-header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.css3-footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.css3-footer-item{
+    flex: 1;
+    width: 80px;
+    height: 80px;
+    background-color: #0b2e13;
+    margin: 10px;
+}
+
+.css3-container{
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: auto;
+    background-color: #c1d8dc;
+}
+
+.list-item{
+    width: 100%;
+    height: 80px;
+    /*border: 1px solid #0c5460;*/
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+.item-content{
+    margin-left: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.item-arrow{
+    position: absolute;
+    right: 10px;
+}

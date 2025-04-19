@@ -1,0 +1,18 @@
+.Background {
+    background-image: url("https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.CenterInformation {
+    background-color: rgba(236, 106, 106, 1);
+    height: 60vh;
+    width: 30%;
+    border-radius: 8px;
+}

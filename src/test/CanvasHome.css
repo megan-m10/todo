@@ -1,0 +1,589 @@
+.CanvasWhiteBackground{
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.LeftPortion{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex:1;*/
+
+    .CanvasSidebar{
+        background-color: #516168;
+        width: 4vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        /*position: relative;*/
+        /*padding: 5px;*/
+
+
+        .sideIconSpaceHolder0 {
+            font-size: 40px;
+            margin: 20px;
+            margin-bottom: 30px;
+            flex: 1;
+        }
+
+        .CanvasSidebar-listOfIcons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /*position: relative;*/
+            /*background-color: #00bcff;*/
+            flex: 10;
+
+
+            .sideIconAvatar{
+                border: 1.5px solid white;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconDashboard{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconSpaceHolder{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconSpaceHolder2{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconCalendar{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconInbox{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconHistory{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+
+            .sideIconQuestionCircle{
+                font-size: 35px;
+                margin-bottom: 10px;
+
+            }
+        }
+
+        .sideIconRightArrow{
+            font-size: 40px;
+            margin-top: 39vh;
+            margin-bottom: 9vh;
+            flex: 1;
+
+        }
+    }
+
+}
+
+
+.Dashboard{
+    /*background-color: #689ea5;*/
+    height: 25vh;
+    width: 96vw;
+    /*margin: 1vw;*/
+    /*border: 10px solid white;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex:1;*/
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .Dashboard-topPart{
+        /*background-color: #4b8da6;*/
+        height: 15vh;
+        width: 100%;
+        flex: 1;
+
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        /*margin: 15px;*/
+        /*margin-top:20px;*/
+        /*margin-left: 50px;*/
+
+        .Dashboard-title{
+            color: black;
+            font-size: 45px;
+            flex: 25;
+            font-weight: inherit;
+            margin-top: 3vh;
+            margin-left: 3vw;
+        }
+
+        .Dashboard-dots{
+            font-size: 30px;
+            flex: 1;
+            /*margin-bottom: 20px;*/
+            margin-top: 2vh;
+        }
+    }
+
+
+    .Dashboard-textbox{
+        flex: 2;
+        /*display: flex;*/
+        /*align-items: center;*/
+        margin-left: 50px;
+        margin-right: 50px;
+        /*padding-left: 30px;*/
+        /*padding-right: 30px;*/
+        padding-top: 20px;
+        border-top: 1px solid #aeaeae;
+        /*background-color: #ec4646;*/
+    }
+}
+
+/*.ContentBottomPortion{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+
+/*    .BottomPortionCourses{*/
+/*        flex: 5;*/
+
+/*        background-color: #c16060;*/
+/*        height: 75vh;*/
+/*        !*margin-right: 10px;*!*/
+
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+
+/*        .TopRowCourses{*/
+/*            flex:1;*/
+/*            background-color: #8bbc92;*/
+/*            height: 75vh;*/
+/*            width: 75vw;*/
+
+/*            display: flex;*/
+/*            flex-direction: row;*/
+/*            align-items: center;*/
+/*            !*margin: 5vh;*!*/
+
+/*            .Courses1{*/
+/*                flex: 1;*/
+/*                background-color: #516168;*/
+/*                height: 35vh;*/
+/*                !*width: 10vw;*!*/
+
+/*                margin: 20px;*/
+/*                border: 1.5px solid black;*/
+/*            }*/
+
+/*            .Courses2{*/
+/*                flex:1;*/
+/*                background-color: #516168;*/
+/*                height: 30vh;*/
+/*                !*width: 20vw;*!*/
+
+/*                margin: 20px;*/
+/*                border: 1.5px solid black;*/
+/*            }*/
+
+/*            .Courses3{*/
+/*                flex: 1;*/
+/*                background-color: #516168;*/
+/*                height: 30vh;*/
+/*                !*width: 20vw;*!*/
+
+/*                margin: 20px;*/
+/*                border: 1.5px solid black;*/
+/*            }*/
+
+/*        }*/
+
+/*        .BottomRowCourses{*/
+/*            flex: 1;*/
+/*            background-color: #6690b3;*/
+/*            height: 75vh;*/
+/*            width: 75vw;*/
+/*        }*/
+
+/*    }*/
+
+/*    .BottomPortionSpaceHolder{*/
+/*        flex: 1;*/
+/*        background-color: #ede494;*/
+/*        height: 75vh;*/
+/*        !*width: 96vw;*!*/
+/*    }*/
+
+/*}*/
+
+/* ------------------------------*/
+.ContentBottomPortion{
+    /*background-color: #70a2b8;*/
+    height: 75vh;
+    width: 100%;
+
+    .BottomPortionCourses{
+        /*background-color: #a070b8;*/
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+        .Course-box{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .Course{
+                flex: 1;
+                height: 30vh;
+                margin-left: 50px;
+                /*border: 1px solid black;*/
+                border-radius: 10px;
+                box-shadow: 0 0 5px 5px rgb(239, 229, 231);
+
+                display: flex;
+                flex-direction: column;
+
+                .Course1TopPortion{
+                    flex: 5;
+                    /*background-color: #4e714c;*/
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .Course1TopSpaceHolder{
+                        flex: 7;
+                    }
+
+                    .Course1Dots{
+                        color: white;
+                        font-size: 30px;
+                        flex: 1;
+                        margin-bottom: 60px;
+
+                    }
+
+                }
+                .Course1WhiteBackground{
+                    flex: 4;
+                    background-color: #ffffff;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .Course1TitleColor{
+                        color: green;
+                        font-size: 15px;
+                        margin-left: 10px;
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        flex: 1;
+
+                    }
+
+                    .Course1Title{
+                        color: #567acc;
+                        margin-left: 10px;
+                        flex: 1;
+
+
+                    }
+
+                    .Course1Timeframe{
+                        color: #567acc;
+                        margin-left: 10px;
+                        flex: 1;
+                        font-size: 12px;
+                    }
+
+                    .Course1Notification{
+                        margin-left: 10px;
+                        flex: 2;
+
+                    }
+
+                }
+            }
+
+            .Course-1{
+                background-color: #4e714c;
+            }
+
+            .Course-2{
+                background-color: #d688af;
+            }
+
+            .Course-3{
+                background-color: #ededed;
+            }
+
+        }
+
+        /*.BottomRowCourses{*/
+        /*    !*background-color: #99ca95;*!*/
+        /*    flex: 1;*/
+
+        /*    display: flex;*/
+        /*    flex-direction: row;*/
+        /*    align-items: center;*/
+
+        /*    .Course4{*/
+        /*        background-color: #a3263c;*/
+        /*        flex: 1;*/
+        /*        height: 30vh;*/
+        /*        margin-left: 50px;*/
+        /*        border: 1.5px solid black;*/
+        /*        border-radius: 10px;*/
+        /*        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);*/
+
+        /*        display: flex;*/
+        /*        flex-direction: column;*/
+
+        /*        .Course4TopPortion {*/
+        /*            flex: 5;*/
+        /*            !*color: #37aca8;*!*/
+
+        /*            display: flex;*/
+        /*            flex-direction: row;*/
+        /*            align-items: center;*/
+
+        /*            .Course4TopSpaceHolder {*/
+        /*                flex: 7;*/
+        /*            }*/
+
+        /*            .Course4Dots {*/
+        /*                color: white;*/
+        /*                font-size: 30px;*/
+        /*                flex: 1;*/
+        /*                margin-bottom: 60px;*/
+
+        /*            }*/
+        /*        }*/
+
+        /*        .Course4WhiteBackground {*/
+        /*            flex: 4;*/
+        /*            background-color: #ffffff;*/
+
+
+        /*            display: flex;*/
+        /*            flex-direction: column;*/
+
+        /*            .Course4TitleColor {*/
+        /*                color: #a3263c;*/
+        /*                font-size: 15px;*/
+        /*                margin-left: 10px;*/
+        /*                margin-top: 10px;*/
+        /*                margin-bottom: 5px;*/
+        /*                flex: 1;*/
+
+        /*            }*/
+
+        /*            .Course4Title {*/
+        /*                color: #567acc;*/
+        /*                margin-left: 10px;*/
+        /*                flex: 1;*/
+
+
+        /*            }*/
+
+        /*            .Course4Timeframe {*/
+        /*                color: #567acc;*/
+        /*                margin-left: 10px;*/
+        /*                flex: 1;*/
+        /*                font-size: 12px;*/
+        /*            }*/
+
+        /*            .Course4Notification {*/
+        /*                margin-left: 10px;*/
+        /*                flex: 2;*/
+
+        /*            }*/
+
+        /*        }*/
+        /*    }*/
+
+        /*    .Course5{*/
+        /*        background-color: #3c7c87;*/
+        /*        flex: 1;*/
+        /*        height: 30vh;*/
+        /*        margin-left: 50px;*/
+        /*        border: 1.5px solid black;*/
+        /*        border-radius: 10px;*/
+        /*        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);*/
+
+        /*        display: flex;*/
+        /*        flex-direction: column;*/
+
+        /*        .Course5TopPortion {*/
+        /*            flex: 5;*/
+        /*            !*color: #37aca8;*!*/
+
+
+        /*            display: flex;*/
+        /*            flex-direction: row;*/
+        /*            align-items: center;*/
+
+        /*            .Course5TopSpaceHolder {*/
+        /*                flex: 7;*/
+        /*            }*/
+
+        /*            .Course5Dots {*/
+        /*                color: white;*/
+        /*                font-size: 30px;*/
+        /*                flex: 1;*/
+        /*                margin-bottom: 60px;*/
+
+        /*            }*/
+        /*        }*/
+
+        /*        .Course5WhiteBackground {*/
+        /*            flex: 4;*/
+        /*            background-color: #ffffff;*/
+
+
+        /*            display: flex;*/
+        /*            flex-direction: column;*/
+
+        /*            .Course5TitleColor {*/
+        /*                color: #3c7c87;*/
+        /*                font-size: 15px;*/
+        /*                margin-left: 10px;*/
+        /*                margin-top: 10px;*/
+        /*                margin-bottom: 5px;*/
+        /*                flex: 1;*/
+
+        /*            }*/
+
+        /*            .Course5Title {*/
+        /*                color: #567acc;*/
+        /*                margin-left: 10px;*/
+        /*                flex: 1;*/
+
+
+        /*            }*/
+
+        /*            .Course5Timeframe {*/
+        /*                color: #567acc;*/
+        /*                margin-left: 10px;*/
+        /*                flex: 1;*/
+        /*                font-size: 12px;*/
+        /*            }*/
+
+        /*            .Course5Notification {*/
+        /*                margin-left: 10px;*/
+        /*                flex: 2;*/
+
+        /*            }*/
+
+        /*        }*/
+        /*    }*/
+        /*    .Course6{*/
+        /*        background-color: #279530;*/
+        /*        flex: 1;*/
+        /*        height: 30vh;*/
+        /*        margin-left: 50px;*/
+        /*        margin-right: 50px;*/
+        /*        border: 1.5px solid black;*/
+        /*        border-radius: 10px;*/
+        /*        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);*/
+
+        /*        display: flex;*/
+        /*        flex-direction: column;*/
+
+        /*        .Course6TopPortion {*/
+        /*            flex: 5;*/
+        /*            !*color: #37aca8;*!*/
+
+        /*            display: flex;*/
+        /*            flex-direction: row;*/
+        /*            align-items: center;*/
+
+        /*            .Course6TopSpaceHolder {*/
+        /*                flex: 7;*/
+        /*            }*/
+
+        /*            .Course6Dots {*/
+        /*                color: white;*/
+        /*                font-size: 30px;*/
+        /*                flex: 1;*/
+        /*                margin-bottom: 60px;*/
+
+        /*            }*/
+        /*        }*/
+
+        /*        .Course6WhiteBackground {*/
+        /*            flex: 4;*/
+        /*            background-color: #ffffff;*/
+
+
+        /*            display: flex;*/
+        /*            flex-direction: column;*/
+
+        /*            .Course6TitleColor {*/
+        /*                color: #279530;*/
+        /*                font-size: 15px;*/
+        /*                margin-left: 10px;*/
+        /*                margin-top: 10px;*/
+        /*                margin-bottom: 5px;*/
+        /*                flex: 1;*/
+
+        /*            }*/
+
+        /*            .Course6Title {*/
+        /*                color: #567acc;*/
+        /*                margin-left: 10px;*/
+        /*                flex: 1;*/
+
+
+        /*            }*/
+
+        /*            .Course6Timeframe {*/
+        /*                color: #567acc;*/
+        /*                margin-left: 10px;*/
+        /*                flex: 1;*/
+        /*                font-size: 12px;*/
+        /*            }*/
+
+        /*            .Course6Notification {*/
+        /*                margin-left: 10px;*/
+        /*                flex: 2;*/
+
+        /*            }*/
+
+        /*        }*/
+
+        /*    }*/
+
+        /*}*/
+
+    }
+
+    .BottomPortionSpaceHolder{
+        /*background-color: #c38bbc;*/
+        flex: 1;
+
+    }
+}
