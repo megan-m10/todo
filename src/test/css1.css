@@ -1,0 +1,41 @@
+.css1-label{
+    font-size: 50px;
+    color: #d8920c;
+    margin: 10px;
+    padding: 10px;
+    border: 1px dashed #d8920c;
+}
+
+
+.css1-p{
+    font-size: 50px;
+    color: #0c5460;
+}
+
+
+.css1-div{
+    width: 80vw;
+    height: 100px;
+    color: white;
+    background-color: #00B72E;
+    text-align: center;
+}
+
+
+.css1-container{
+    width: 600px;
+    height: calc(100vh - 200px);
+}
+
+.css1-div-1{
+    width: 100px;
+    height: 100px;
+    background-color: #0b2e13;
+    /*padding-top: 100px;*/
+
+    margin: 20px 10px 0 0; /* 上 左 下 右*/
+    /*margin-top: 10px;*/
+    /*margin-left: 10px;*/
+    /*border: 5px solid #11e842;*/
+    border-top: 5px solid #11e842;
+}

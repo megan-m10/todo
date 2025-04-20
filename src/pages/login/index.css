@@ -1,0 +1,119 @@
+.CanvasLogin {
+    height: 100vh;
+    background-color: #384855;
+    display: flex;
+    flex-direction: column;
+
+    .Information{
+        /*background-color: #b3b3b3;*/
+        align-self: center;
+        margin-top: 8vh;
+        height: 58vh;
+        width: 25vw;
+
+        display: flex;
+        flex-direction: column;
+
+        .TopPortion{
+            /*background-color: #45afa3;*/
+            flex: 1;
+
+        }
+
+        .MiddlePortion{
+            /*background-color: #d57575;*/
+            flex: 4;
+
+            display: flex;
+            flex-direction: column;
+
+            .MiddleTop{
+                flex: 1;
+                /*background-color: #ffce62;*/
+
+                .textbox1{
+                    margin-top: 1vh;
+                    margin-bottom: -5px;
+                }
+
+
+                .Subtitle1{
+                    color: #ffffff;
+                    font-size: 2vh;
+                    font-weight: bold;
+                    /*margin-bottom: 1vh;*/
+                    /*margin-top: 0.5vh;*/
+                }
+            }
+
+            .MiddleMiddle{
+                flex: 1;
+                /*background-color: #a33f3f;*/
+
+                .textbox2{
+                    margin-top: 1vh;
+                    margin-bottom: -5px;
+                }
+
+                .Subtitle2{
+                    color: #ffffff;
+                    font-size: 2vh;
+                    font-weight: bold;
+                    /*margin-bottom: 1vh;*/
+                }
+
+            }
+
+            .MiddleBottom{
+                flex: 1;
+                /*background-color: #7545af;*/
+
+                display: flex;
+                flex-direction: row;
+
+                .MiddleBottomLeft{
+                    flex: 1;
+                    /*background-color: #c453d1;*/
+
+                    display: flex;
+                    flex-direction: column;
+                    .checkbox{
+                        flex: 1;
+                        /*background-color: #67c7f3;*/
+                        align-items: center;
+                        margin-bottom: -10px;
+                        margin-top: 10px;
+                        color: white;
+                        font-size: 1.5vh;
+                        padding-bottom: 3px;
+                    }
+                    .ResetPassword{
+                        flex: 1;
+                        /*background-color: #8eff63;*/
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+                .MiddleBottomRight{
+                    flex: 1;
+                    /*background-color: #46a33f;*/
+
+                    .LogInButton{
+                        color: white;
+                        background-color: #384855;
+                        width: 7.5vw;
+                        margin-left: 4.5vw;
+                        margin-top: 2.5vh;
+                        height: 2.5vw;
+                    }
+
+                }
+            }
+        }
+
+        .BottomPortion{
+            /*background-color: #7182b1;*/
+            flex: 3;
+        }
+    }
+}
