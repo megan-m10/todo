@@ -4,7 +4,7 @@
     background-position: center;
     height: 100vh;
 
-    .CenterInformation {
+    .CenterInformation-register {
         background-color: rgb(181, 181, 181, 0.55);
         height: 50vh;
         width: 75vw;
@@ -14,6 +14,20 @@
         display: flex;
         flex-direction: column;
         /*align-items: center;*/
+
+        .adm-form{
+            ---border-inner:0 !important;
+            ---border-top:0 !important;
+            ---border-bottom:0 !important;
+
+            .adm-list-body{
+                background-color: rgb(181, 181, 181, 0) !important;
+
+                .adm-list-item{
+                    background-color: rgb(181, 181, 181, 0) !important;
+                }
+            }
+        }
 
         .Top{
             flex: 1;
