@@ -11,7 +11,7 @@ const SetAccount=() =>{
 
     return (
         <div className={"Background"}>
-            <div className={"CenterInformation"}>
+            <div className={"CenterInformation-register"}>
                 {/*<Form className="Form">*/}
                     <div className={"Top"}>
                         <div className={"Title"}>

@@ -27,7 +27,7 @@ const ScheduleLogin = () => {
 
     return (
         <div className="Background">
-            <div className="CenterInformation">
+            <div className="CenterInformation-login">
                     <Form form={form}>
                         <div className={"UpperPortion"}>
                             <div className="Title">Sign In</div>
