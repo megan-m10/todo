@@ -1,0 +1,72 @@
+.Background {
+    /*background-image: url("https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg");*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .CenterInformation {
+        background-color: rgb(181, 181, 181, 0.55);
+        height: 50vh;
+        width: 75vw;
+        max-height: 500px;
+        max-width: 500px;
+
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+
+        .Top{
+            flex: 1;
+            /*background-color: rgb(244, 233, 94);*/
+            width: 100%;
+
+            .Title{
+                font-size: 5vh;
+                /*width: 50%;*/
+                color: rgb(67, 67, 67);
+                height: 33%;
+
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+        .Middle{
+            flex:3;
+            /*background-color: rgb(166, 255, 205);*/
+            width: 50%;
+
+            .TwoInput{
+                border: 1px solid rgb(0, 0, 0);
+                margin-bottom: 1vh;
+                margin-top: 1vh;
+                width: 100%;
+                /*font-size: 15px;*/
+                /*padding: 5px;*/
+
+            }
+        }
+        .Bottom{
+            flex:1;
+            /*background-color: rgb(94, 222, 244);*/
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-end; /* aligns content to the right */
+            align-items: center;       /* centers vertically (optional) */
+            padding-right: 2vw;
+
+            .CreateAccountButton {
+                padding: 10px 10px;
+                margin-right: 10px;
+                /*cursor: pointer;*/
+
+            }
+        }
+        .Placeholder{
+            flex:3;
+            /*background-color: rgb(113, 130, 177);*/
+            width: 100%;
+        }
+    }
+}

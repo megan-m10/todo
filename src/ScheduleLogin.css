@@ -7,12 +7,136 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .CenterInformation {
+        background-color: rgb(181, 181, 181, 0.55);
+        height: 50vh;
+        width: 75vw;
+        max-height: 500px;
+        max-width: 500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .UpperPortion{
+            flex: 1;
+            /*background-color: #f4e95e;*/
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            .Title{
+                flex: 1;
+                /*background-color: rgba(71, 71, 243, 0.55);*/
+                font-size: 5vh;
+                width: 100%;
+                color: rgb(67, 67, 67);
+                height: 33%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*.TwoInput .adm-form-item {*/
+            /*    margin: 0;*/
+            /*    padding: 0;*/
+            /*    background: none;*/
+            /*}*/
+
+            .TwoInput{
+                flex: 2;
+                /*background-color: #ec6a6a;*/
+                width: 100%;
+                height: 67%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+                .Username{
+                    /*flex:1;*/
+                    /*background-color: rgb(255, 255, 255);*/
+                    /*background-color: transparent;*/
+                    border: 1px solid rgb(0, 0, 0);
+                    margin-bottom: 1vh;
+                    width: 100%;
+                    font-size: 15px;
+                    padding: 5px;
+
+                }
+                .Password{
+                    /*flex:1;*/
+                    /*background-color: rgb(255, 255, 255);*/
+                    border: 1px solid rgb(0, 0, 0);
+                    margin-bottom: 1vh;
+                    width: 100%;
+                    font-size: 15px;
+                    padding: 5px;
+                }
+            }
+
+        }
+
+        .LowerPortion{
+            flex:1;
+            width: 100%;
+            /*background-color: rgba(228, 129, 255, 0.55);*/
+
+            .Buttons{
+                /*background-color: #a6ffcd;*/
+                flex:1;
+                width: 100%;
+                /*margin-top: 1vh;*/
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .OtherHelp{
+                    flex:7;
+                    /*display: flex;*/
+                    /*justify-content: center;*/
+                    /*align-items: center;*/
+                    text-decoration: underline;
+                    margin-left: 3vw;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .CreateAccount{
+                        flex:1;
+
+                    }
+                    .ResetLink{
+                        flex:1;
+
+                    }
+
+                }
+
+                .LogInButton{
+                    flex: 2;
+                    /*background-color: rgb(255, 255, 255);*/
+                    max-width: 75px;
+                    padding: 5px 5px;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    /*margin-left: auto;*/
+                    margin-right: 5vw;
+                    max-height: 5vh;
+
+
+                }
+
+            }
+        }
+    }
 }
 
 
-.CenterInformation {
-    background-color: rgba(236, 106, 106, 1);
-    height: 60vh;
-    width: 30%;
-    border-radius: 8px;
-}
+

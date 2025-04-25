@@ -1,6 +1,7 @@
 import React from "react";
 import {Space} from "antd";
 import {useNavigate} from "react-router";
+import ResetPassword from "./ResetPassword";
 
 
 const Home = () => {
@@ -55,6 +56,16 @@ const Home = () => {
     const handleScheduleLogin = () => {
         navigate('/ScheduleLogin');
     }
+    const handleResetPassword = () => {
+        navigate('/ResetPassword');
+    }
+    const handleSetAccount = () => {
+        navigate('/SetAccount');
+    }
+    const    AccountListPage = () => {
+        navigate('/AccountListPage');
+    }
+
 
     return (
         <Space>
@@ -71,6 +82,10 @@ const Home = () => {
             <a onClick={handleCourseRequest}>CourseRequest</a>
             <a onClick={handleScheduleLogin}>ScheduleLogin</a>
             <a onClick={handleReminderSchedule}>ReminderSchedule</a>
+            <a onClick={handleResetPassword}>ResetPassword</a>
+            <a onClick={handleSetAccount}>SetAccount</a>
+            <a onClick={AccountListPage}>AccountListPage</a>
+
         </Space>
     )
 }

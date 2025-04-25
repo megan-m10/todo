@@ -14,6 +14,9 @@ import ProductPagePractice from "../pages/product/productPagePractice";
 import CourseRequest from "../pages/courseRequest";
 import ReminderSchedule from "../ReminderSchedule";
 import ScheduleLogin from "../ScheduleLogin";
+import ResetPassword from "../ResetPassword";
+import SetAccount from "../SetAccount";
+import AccountListPage from "../AccountListPage";
 
 
 export const routers = [
@@ -84,5 +87,18 @@ export const routers = [
     {
         element: <ScheduleLogin/>,
         path: '/ScheduleLogin'
+    },
+    {
+        element: <ResetPassword/>,
+        path: '/ResetPassword'
+    },
+    {
+        element: <SetAccount/>,
+            path: '/SetAccount'
+    },
+    {
+        element: <AccountListPage/>,
+        path: '/AccountListPage'
     }
+
 ]
