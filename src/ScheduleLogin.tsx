@@ -1,8 +1,8 @@
 import React from "react";
 import "./ScheduleLogin.css";
-import { Form, Input, Button } from 'antd-mobile';
+import { Form, Input, Button } from 'antd';
 import { useNavigate } from "react-router";
-import { login } from "./api/Login";
+import { login } from "./api/account";
 
 const ScheduleLogin = () => {
     const [form] = Form.useForm();
@@ -35,14 +35,12 @@ const ScheduleLogin = () => {
                                 <Input
                                     className={"Username"}
                                     placeholder="Username"
-                                    clearable
                                 />
                             </Form.Item>
                             <Form.Item name="password" className={"TwoInput"}>
                                 <Input
                                     className={"Password"}
                                     placeholder="Password"
-                                    clearable
                                     type="password"
                                 />
                             </Form.Item>
@@ -69,7 +67,6 @@ const ScheduleLogin = () => {
                                 </div>
                                 <Button
                                     className={"LogInButton"}
-                                    fill='outline'
                                     onClick={handleSubmit}
                                 >
                                     Log in
