@@ -1,13 +1,24 @@
-import {Button, Form, Input} from "antd-mobile";
+import {Button, Form, Input, message} from "antd";
 import React from "react";
 import "./SetAccount.css"
 import {useNavigate} from "react-router";
-import {AccountManagement} from "./api/AccountManagement";
+import {register} from "./api/account";
 
 const SetAccount=() =>{
     const [form] = Form.useForm();
     const navigate = useNavigate();
 
+    const handleRegister = (values:any)=>{
+       register(values)
+           .then((res)=>{
+                if(res){
+                    message.info('注册成功');
+                    navigate('/ScheduleLogin');
+                }else {
+                    message.info('注册失败');
+                }
+            })
+    }
 
     return (
         <div className={"Background"}>
@@ -19,19 +30,22 @@ const SetAccount=() =>{
                         </div>
                     </div>
                     <div className={"Middle"}>
-                        <Form form={form}>
+                        <Form
+                            form={form}
+                            onFinish={(values)=>{
+                                handleRegister(values);
+                            }}
+                        >
                             <Form.Item name="username" className={"TwoInput"}>
                                 <Input
                                     className={"Username"}
                                     placeholder="Username"
-                                    clearable
                                 />
                             </Form.Item>
                             <Form.Item name="password" className={"TwoInput"}>
                                 <Input
                                     className={"Password"}
                                     placeholder="Password"
-                                    clearable
                                     type="password"
                                 />
                             </Form.Item>
@@ -40,16 +54,14 @@ const SetAccount=() =>{
 
                     </div>
                     <div className={"Bottom"}>
-                        <Form form={form}>
-                            <Button
-                                className={"CreateAccountButton"}
-                                fill='outline'
-                                // onClick={handleSubmit}
-                            >
-                                Create Account
-                            </Button>
-                        </Form>
-
+                        <Button
+                            className={"CreateAccountButton"}
+                            onClick={()=>{
+                                form.submit();
+                            }}
+                        >
+                            Create Account
+                        </Button>
                     </div>
                     <div className={"Placeholder"}></div>
 
