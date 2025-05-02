@@ -1,0 +1,31 @@
+
+.ReminderSchedule {
+
+    display: flex;
+    flex-direction: row;
+
+    .Calendar{
+        /*display: flex;*/
+        /*flex: 6;*/
+        width: 50vw;
+
+    }
+    .TodoList{
+        display: flex;
+        /*flex: 4;*/
+        width: 50vw;
+
+    }
+}
+
+.events {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.events li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

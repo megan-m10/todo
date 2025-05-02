@@ -13,7 +13,7 @@
 
         display: flex;
         flex-direction: column;
-        /*align-items: center;*/
+        align-items: center;
 
         .adm-form{
             ---border-inner:0 !important;
@@ -39,6 +39,8 @@
                 /*width: 50%;*/
                 color: rgb(67, 67, 67);
                 height: 33%;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
 
                 display: flex;
                 justify-content: center;
@@ -48,17 +50,38 @@
         .Middle{
             flex:3;
             /*background-color: rgb(166, 255, 205);*/
-            width: 50%;
+            /*width: 50%;*/
+            width: 75%;
+            height: 67%;
 
-            .TwoInput{
-                border: 1px solid rgb(0, 0, 0);
-                margin-bottom: 1vh;
-                margin-top: 1vh;
+            /*display: flex;*/
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .TwoInput-register {
+
                 width: 100%;
-                /*font-size: 15px;*/
-                /*padding: 5px;*/
+                height: 67%;
 
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
             }
+
+            .Username-register,
+            .Password-register {
+                width: 90%;
+                border: 1px solid rgb(0, 0, 0);
+                /*margin-bottom: 1vh;*/
+                font-size: 15px;
+                padding: 5px;
+                box-sizing: border-box;
+                margin-left: 2vh;
+                margin-top: 1vh;
+            }
+
         }
         .Bottom{
             flex:1;
@@ -72,7 +95,7 @@
 
             .CreateAccountButton {
                 padding: 10px 10px;
-                margin-right: 10px;
+                margin-right: 20px;
                 /*cursor: pointer;*/
 
             }

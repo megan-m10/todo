@@ -1,7 +1,6 @@
 import React from "react";
 import {Space} from "antd";
 import {useNavigate} from "react-router";
-import ResetPassword from "./ResetPassword";
 
 
 const Home = () => {
@@ -69,8 +68,6 @@ const Home = () => {
 
     return (
         <Space>
-            <a onClick={handleCalculator} >计算器</a>
-            <a onClick={handleTest}>测试页面</a>
             <a onClick={handleMyButton}>MyButton</a>
             <a onClick={handleCss1}>css1</a>
             <a onClick={handleCss2}>css2</a>

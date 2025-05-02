@@ -5,7 +5,7 @@ export const login = (body: any): Promise<any> => {
 
     return new Promise<any>(resolve => {
         setTimeout(() => {
-            if (username.trim().includes('@') && password === '123') {
+            if (username && username.trim().includes('@') && password === '123') {
                 const res = {
                     success: true,
                     token: '123',

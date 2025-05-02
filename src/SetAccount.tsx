@@ -36,19 +36,23 @@ const SetAccount=() =>{
                                 handleRegister(values);
                             }}
                         >
-                            <Form.Item name="username" className={"TwoInput"}>
-                                <Input
-                                    className={"Username"}
-                                    placeholder="Username"
-                                />
-                            </Form.Item>
-                            <Form.Item name="password" className={"TwoInput"}>
-                                <Input
-                                    className={"Password"}
-                                    placeholder="Password"
-                                    type="password"
-                                />
-                            </Form.Item>
+                            <div className={"TwoInput-register"}>
+                                <Form.Item name="username" >
+                                    <Input
+                                        className={"Username-register"}
+                                        placeholder="Username"
+                                    />
+                                </Form.Item>
+                                <Form.Item name="password" >
+                                    <Input
+                                        className={"Password-register"}
+                                        placeholder="Password"
+                                        type="password"
+                                    />
+                                </Form.Item>
+
+                            </div>
+
                         </Form>
                         {/*<div className={"Content"}></div>*/}
 

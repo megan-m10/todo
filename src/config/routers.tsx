@@ -1,5 +1,3 @@
-import App from "../App";
-import App1 from "../App1";
 import Home from "../Home";
 import MyButton from "../test/mybutton";
 import Css1 from "../test/css1";
@@ -20,14 +18,6 @@ import AccountListPage from "../AccountListPage";
 
 
 export const routers = [
-    {
-        element: <App/>,
-        path: '/calculator'
-    },
-    {
-        element: <App1/>,
-        path: '/test'
-    },
     {
         element: <MyButton/>,
         path: '/mybutton'
@@ -59,10 +49,6 @@ export const routers = [
     {
         element: <ProductPage/>,
         path: '/product'
-    },
-    {
-        element: <App1/>,
-        path: '/user/login'
     },
     {
         element: <Home/>,
