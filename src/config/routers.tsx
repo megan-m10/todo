@@ -10,7 +10,7 @@ import ProductPage from "../pages/product";
 import IndexPractice from "../pages/login/indexPractice";
 import ProductPagePractice from "../pages/product/productPagePractice";
 import CourseRequest from "../pages/courseRequest";
-import ReminderSchedule from "../ReminderSchedule";
+import Index from "../pages/home";
 import ScheduleLogin from "../ScheduleLogin";
 import ResetPassword from "../ResetPassword";
 import SetAccount from "../SetAccount";
@@ -67,7 +67,7 @@ export const routers = [
         path: '/CourseRequest'
     },
     {
-        element: <ReminderSchedule/>,
+        element: <Index/>,
         path: '/ReminderSchedule'
     },
     {
